@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    color: #ffd700;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+.attempts-text {
+    color: #00ffcc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+/* Remove default arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: #ff0055;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 80%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4);
+}
+
+button:hover {
+    background-color: #ff3377;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 30px;
+    margin-bottom: 0;
+}
+
+#reset-btn {
+    background-color: #00ffcc;
+    color: #141e30;
+    margin-top: 20px;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+#reset-btn:hover {
+    background-color: #33ffdb;
+}
